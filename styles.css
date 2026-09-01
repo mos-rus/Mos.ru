@@ -80,14 +80,15 @@ button {
 
 .logo {
     display: inline-flex;
-    align-items: center;
-    gap: 6px;
+    align-items: flex-end;
+    gap: 8px;
     font-weight: 700;
     font-size: 20px;
     color: #111;
     text-decoration: none;
-    line-height: 1.1;
+    line-height: 1;
     margin-bottom: 28px;
+    padding-bottom: 8px;
 }
 
 .logo:hover { text-decoration: none; }
@@ -97,19 +98,32 @@ button {
     letter-spacing: -0.3px;
     font-size: 42px;
     font-weight: 500;
+    line-height: 0.95;
+    padding-bottom: 2px;
 }
 
 .logo-id {
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #e11d48;
+    background: #e30613;
     color: #fff;
-    padding: 6px 10px;
+    padding: 7px 10px 8px;
     border-radius: 0;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1;
+}
+
+.logo-id::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-style: solid;
+    border-width: 8px 10px 0 0;
+    border-color: #e30613 transparent transparent transparent;
 }
 
 .left-title {
@@ -119,9 +133,7 @@ button {
     color: #111;
     margin-bottom: 8px;
     letter-spacing: -0.2px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
 }
 
 .left-subtitle {
@@ -498,7 +510,6 @@ button {
     .left-title {
         font-size: 18px;
         max-width: 100%;
-        white-space: normal;
     }
 
     .left-subtitle {
