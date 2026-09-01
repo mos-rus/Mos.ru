@@ -360,15 +360,47 @@ button {
 
 .auth-icon {
     width: 48px;
-    height: 44px;
-    border: 1px solid #c6ccd7;
-    border-radius: 4px;
-    background: #f4f6fa;
+    height: 48px;
+    border: 1px solid #d0d5de;
+    border-radius: 6px;
+    background: #f3f5f8;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: default;
     overflow: hidden;
+    padding: 0;
+}
+
+.auth-icon svg,
+.auth-logo {
+    display: block;
+    flex-shrink: 0;
+}
+
+.auth-logo--gos {
+    width: 30px;
+    height: 30px;
+}
+
+.auth-logo--sber {
+    width: 28px;
+    height: 28px;
+}
+
+.auth-logo--tid {
+    width: 36px;
+    height: 17px;
+}
+
+.auth-logo--vtb {
+    width: 30px;
+    height: 22px;
+}
+
+.auth-logo--alfa {
+    width: 18px;
+    height: 22px;
 }
 
 .auth-icon-image {
